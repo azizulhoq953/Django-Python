@@ -1,0 +1,37 @@
+1. Install Package
+sudo apt-get install python3-venv
+
+2. Create a Directory
+mkdir djangoenv  
+
+3. Create Virtual Environment
+python3 -m venv djangoenv  
+
+4. Activate Virtual Environment
+source djangoenv/bin/activate  
+
+5. Install Django
+ pip install django  
+ 
+ 
+ 
+ 6. Create an Admin User
+  python3 managen.py createsuperuser  
+  
+ 7.Now start development server and access admin login
+ python3 manage.py runserver  
+ 
+ 
+ 8. create an app, we can use the following command
+ python3 manage.py startapp appname  
+ 
+ 9. Django App Example
+ python3 manage.py startapp myapp  
+ 
+ 10. requirements file
+ pip freeze > requirements.txt
+ django-admin startproject folderName .
+ 
+ 11. first time apps run mandatory this command
+ python3 manage.py makemigrations
+ python3 manage.py migrate
