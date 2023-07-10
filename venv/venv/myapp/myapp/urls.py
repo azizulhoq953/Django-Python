@@ -23,4 +23,5 @@ urlpatterns = [
     path('blog/',include('blog_grid.urls')),
     path('contact/',include('contact.urls')),
     path('index/',include('index_dark.urls')),
+    path('wr/',include('wrap.urls')),
 ]

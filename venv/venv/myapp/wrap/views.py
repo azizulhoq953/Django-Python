@@ -3,8 +3,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def contact(request):
-    return render(request, 'contact/contact-2.html')
+def wrap(request):
+    return render(request, 'services/wrap.html')
 
 # def about_me(request):
 #     return HttpResponse ('Here Aviliable lots.')
