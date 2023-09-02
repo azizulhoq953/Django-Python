@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignUp</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="{% static 'css/signup.css'%}" rel="stylesheet">
+    {% comment %} <link href="{% static 'css/register.js'%}" rel="stylesheet"> {% endcomment %}
+</head>
+<body>
+    <section class="vh-100 bg-image"
+    style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+  
+                <form method="POST">
+                {%csrf_token %}
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="psw" required name="Username"
+                    class="form-control form-control-lg" />
+                    <label class="form-label" for="usearname">Your Username</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="psw" required name="Email" class="form-control form-control-lg" />
+                    <label class="form-label" for="email">Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="phoneNumber" id="psw" required name="PhoneNumber" class="form-control form-control-lg" />
+                    <label class="form-label" for="phoneNumber">Enter your phoneNumber</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="password" id="psw" required name="Password" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">Your password</label>
+                  </div>
+  
+                
+  
+                  <div class="form-outline mb-4">
+                    <input type="password" id="psw" required name="Password1" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">Repeat your password</label>
+                  </div>
+                  
+                  
+
+                  <div class="form-outline mb-4">
+                    <input type="location" id="psw" required name="Location" class="form-control form-control-lg" />
+                    <label class="form-label" for="location">Enter your Location</label>
+                  </div>
+  
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="psw" />
+                    <label class="form-check-label" for="form2Example3g">
+                      I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                    </label>
+                  </div>
+  
+                  <div class="d-flex justify-content-center">
+                    <button type="submit"
+                      class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  </div>
+  
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/login"
+                      class="fw-bold text-body"><u>Login here</u></a></p>
+  
+                </form>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    {% comment %} <div class="registration-form">
+        <form action="" method='POST' >
+            <form method="POST" >
+           
+
+                <div class="container">
+                    <h1> signup Page </h1>
+                    <hr>
+                    {%csrf_token %}
+                    <label for="usearname"> <b>usearname<b></label>
+                    <input type="text" placeholder="Enter username" id="us" required name="Username">
+    
+                    <label for="password"> <b>password<b></label>
+                        <input type="password" placeholder="Enter Password" id="psw" required name="Password1">
+    
+    
+                    <label for="Email"> <b>Email<b></label>
+                        <input type="Email" placeholder="Enter Email" id="psw" required name="email">
+                    
+                     <label for="phoneNumber"> <b>phoneNumber<b></label>
+                            <input type="phoneNumber" placeholder="Enter PhoneNumber" id="psw" required name="PhoneNumber">
+                        
+                    <label for="location"> <b>location<b></label>
+                                <input type="location" placeholder="Enter Location" id="psw" required name="Location">
+
+                        <button type="submit" class="registerbtn"> Register </button>
+    
+                </div>
+                
+                <div class="container signin">
+                    <p> Already Have An Message <a href="#"> Message </a>.</p>
+                </div>
+           
+                <h6 style=" text-align:center " > <a href="/login">Login </a> </h6>
+            </div>
+        </form>
+        <div class="social-media">
+            <h5>Sign up with social media</h5>
+            <div class="social-icons">
+                <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
+            </div>
+        </div>
+    </div> {% endcomment %}
+  
+</body>
+</html>

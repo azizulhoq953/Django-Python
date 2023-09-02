@@ -1,0 +1,200 @@
+{% extends "base.html" %} 
+<!DOCTYPE html>
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> {% block Content %} {%endblock%}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+      
+            {%block aboutt%}
+            <h1>About Me</h1>
+            {%endblock%}
+        
+            {%block sub%}
+            About Me
+            {%endblock%}
+
+            {%block premium%}
+             {%endblock%}
+        
+             {%block section%}
+            <section class="about-me-one">
+                <div class="auto-container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="about-me-one__image">
+                                <img src="{% static 'images/update-26-02-2021/resources/about-me-1.jpg'%}" alt="">
+                            </div><!-- /.about-me-one__image -->
+                        </div><!-- /.col-md-12 -->
+                        <div class="col-md-12 col-lg-6">
+                           
+                            <div class="about-me-one__content">
+                               
+                                
+                                <div class="sec-title">
+                                    <h2>Jessica brown<span class="dot">.</span></h2>
+                                </div>
+                                <div class="about-me-one__social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                                <!-- /.about-me-one__social -->
+                                <p class="about-me-one__text">Lorem ipsum dolor sit amet, con adipiscing elit tiam convallis
+                                    elit id impedie. Quisq commodo simply free ornare tortor. Excepteur sint occaecat sunt
+                                    in culpa qui officia deserunt mollit.</p>
+                                <p class="about-me-one__text">If you are going to use a passage of Lorem Ipsum, you need to
+                                    be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    
+                                <p class="about-me-one__qoute">I help my clients stand out and they help me grow.</p>
+                                <!-- /.about-me-one__qoute -->
+    
+                                <div class="row about-me-one__certificate-row">
+                                    <div class="col-md-6">
+                                        <img src="images/update-26-02-2021/resources/about-certificate-1.jpg" alt="">
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-6">
+                                        <img src="images/update-26-02-2021/resources/about-certificate-2.jpg" alt="">
+                                    </div><!-- /.col-md-6 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.about-me-one__content -->
+                        </div><!-- /.col-md-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.auto-container -->
+            </section><!-- /.about-me-one -->
+            
+            
+           <div class="parallax">
+            <div class="about-me-counter">
+                <div class="auto-container">
+                    <div class="row align-content-md-center">
+                        <div class="col-md-6 col-lg-3 d-flex align-content-md-center">
+                            <div class="sec-title">
+                                <h2>My Skills<span class="dot">.</span></h2>
+                            </div>
+                        </div><!-- /.col-md-6 col-lg-3 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="counter-block">
+                                <div class="inner-box">
+                                    <div class="graph-outer">
+                                        <input type="text" class="dial" data-fgColor="#ffaa16" data-bgColor="none"
+                                            data-width="139" data-height="140" data-linecap="normal" value="89"
+                                            data-thickness="0.050">
+                                        <div class="inner-text count-box"><span class="count-text" data-stop="89"
+                                                data-speed="2000"></span><span class="sign">%</span></div>
+                                    </div>
+                                    <h4>Wordpress <br>
+                                        developement</h4>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="counter-block">
+                                <div class="inner-box">
+                                    <div class="graph-outer">
+                                        <input type="text" class="dial" data-fgColor="#ffaa16" data-bgColor="none"
+                                            data-width="139" data-height="140" data-linecap="normal" value="89"
+                                            data-thickness="0.050">
+                                        <div class="inner-text count-box"><span class="count-text" data-stop="89"
+                                                data-speed="2000"></span><span class="sign">%</span></div>
+                                    </div>
+                                    <h4>React<br>
+                                        Vue/Nuxt</h4>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="counter-block">
+                                <div class="inner-box">
+                                    <div class="graph-outer">
+                                        <input type="text" class="dial" data-fgColor="#ffaa16" data-bgColor="none"
+                                            data-width="139" data-height="140" data-linecap="normal" value="89"
+                                            data-thickness="0.050">
+                                        <div class="inner-text count-box"><span class="count-text" data-stop="89"
+                                                data-speed="2000"></span><span class="sign">%</span></div>
+                                    </div>
+                                    <h4>Website <br>
+                                        designing</h4>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.auto-container -->
+            </div><!-- /.about-me-counter -->
+        </div>
+
+
+            
+
+    
+            <section class="testimonials-five">
+                <div class="auto-container">
+                    <div class="sec-title text-center">
+                        <h2>My testimonials <span class="dot">.</span></h2>
+                    </div><!-- /.sec-title -->
+                    <div class="testimonials-carousel-two owl-theme owl-carousel testimonials-five__carousel">
+                        <div class="item">
+                            <div class="testimonials-five-card">
+                                <img src="images/update-26-02-2021/resources/testimonial-1-1.jpg" alt=""
+                                    class="testimonials-five-card__image">
+                                <p class="testimonials-five-card__text">This is due to their excellent service, competitive
+                                    pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
+                                <h3 class="testimonials-five-card__title">
+                                    Christine Albert
+                                </h3><!-- /.testimonials-five-card__title -->
+                                <span class="testimonials-five-card__designation">
+                                    My Clients
+                                </span><!-- /.testimonials-five-card__designation -->
+                            </div><!-- /.testimonials-five-card -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="testimonials-five-card">
+                                <img src="images/update-26-02-2021/resources/testimonial-1-1.jpg" alt=""
+                                    class="testimonials-five-card__image">
+                                <p class="testimonials-five-card__text">This is due to their excellent service, competitive
+                                    pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
+                                <h3 class="testimonials-five-card__title">
+                                    Christine Albert
+                                </h3><!-- /.testimonials-five-card__title -->
+                                <span class="testimonials-five-card__designation">
+                                    My Clients
+                                </span><!-- /.testimonials-five-card__designation -->
+                            </div><!-- /.testimonials-five-card -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="testimonials-five-card">
+                                <img class="testimonials-five-card__image"
+                                    src="{% static 'images/update-26-02-2021/resources/testimonial-1-1.jpg'%}" alt="">
+                                <p class="testimonials-five-card__text">This is due to their excellent service, competitive
+                                    pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
+                                <h3 class="testimonials-five-card__title">
+                                    Christine Albert
+                                </h3><!-- /.testimonials-five-card__title -->
+                                <span class="testimonials-five-card__designation">
+                                    My Clients
+                                </span><!-- /.testimonials-five-card__designation -->
+                            </div><!-- /.testimonials-five-card -->
+                        </div><!-- /.item -->
+                    </div><!-- /.testimonials-carousel-two owl-theme owl-carousel -->
+                </div><!-- /.auto-container -->
+            </section><!-- /.testimonials-five -->
+            {%endblock%}
+            
+
+
+    </body>
+</html>
+
+
+            

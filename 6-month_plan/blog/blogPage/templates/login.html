@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%load static%}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+      
+        <form method="POST" >
+            {%csrf_token %}
+
+            <div class="container">
+                <h1> Login Page </h1>
+                <hr>
+
+                <label for="Usearname"> <b>Usearname<b></label>
+                <input type="text" placeholder="Enter username" id="email" required name="username">
+
+                <label for="Password"> <b>Password<b></label>
+                    <input type="Password" placeholder="Enter Password" id="psw" required name="Password">
+
+
+
+                    <button type="submit" class="registerbtn"> Register </button>
+
+            </div>
+            
+            <div class="container signin">
+                <p> Already Have An Message <a href="#"> Message </a>.</p>
+            </div>
+        </form>
+       
+    </body>
+</html>

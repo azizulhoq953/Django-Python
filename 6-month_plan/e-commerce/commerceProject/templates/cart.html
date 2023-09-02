@@ -1,0 +1,198 @@
+{%extends 'base.html'%}
+{%block title%} cart-page {%endblock%}
+ {%block cartAllpage%}
+    <div class="page-wrapper">
+
+        <!-- style switcher -->
+        {%block switcher%}
+        {%endblock%}
+          
+
+        <!-- Main Header -->
+        
+
+        <!-- End Main Header -->
+
+        <!--Mobile Menu-->
+        <div class="side-menu__block">
+
+
+            <div class="side-menu__block-overlay custom-cursor__overlay">
+                <div class="cursor"></div>
+                <div class="cursor-follower"></div>
+            </div><!-- /.side-menu__block-overlay -->
+            <div class="side-menu__block-inner ">
+                <div class="side-menu__top justify-content-end">
+
+                    <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="images/icons/close-1-1.png"
+                            alt=""></a>
+                </div><!-- /.side-menu__top -->
+
+
+                <nav class="mobile-nav__container">
+                    <!-- content is loading via js -->
+                </nav>
+                <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+                <div class="side-menu__content">
+                    <p>Linoor is a premium Template for Digital Agencies, Start Ups, Small Business and a wide range of
+                        other agencies.</p>
+                    <p><a href="mailto:needhelp@linoor.com">needhelp@linoor.com</a> <br> <a href="tel:888-999-0000">888
+                            999 0000</a></p>
+                    <div class="side-menu__social">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div><!-- /.side-menu__content -->
+            </div><!-- /.side-menu__block-inner -->
+        </div><!-- /.side-menu__block -->
+
+        <!--Search Popup-->
+        <div class="search-popup">
+            <div class="search-popup__overlay custom-cursor__overlay">
+                <div class="cursor"></div>
+                <div class="cursor-follower"></div>
+            </div><!-- /.search-popup__overlay -->
+            <div class="search-popup__inner">
+                <form action="#" class="search-popup__form">
+                    <input type="text" name="search" placeholder="Type here to Search....">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div><!-- /.search-popup__inner -->
+        </div><!-- /.search-popup -->
+
+        <!-- Banner Section -->
+        <section class="page-banner">
+            <div class="image-layer" style="background-image:url(images/background/image-7.jpg);"></div>
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="banner-inner">
+                <div class="auto-container">
+                    <div class="inner-container clearfix">
+                        {%block centerTag%} <h1>cart-Page</h1> {%endblock%}
+                        <div class="page-nav">
+                            <ul class="bread-crumb clearfix">
+                                <li><a href="/base">Home</a></li>
+                                <li><a href="/shop">Shop</a></li>
+                                <li class="active">Cart</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Banner Section -->
+
+
+        <section class="cart-page">
+            <div class="auto-container">
+                <div class="table-responsive">
+                    <table class="table cart-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="product-box">
+                                        <img src="images/update-26-01-2021/shops/cart-1-1.jpg" alt="">
+                                        <h3><a href="product-details.html">comfy chair</a></h3>
+                                    </div><!-- /.product-box -->
+                                </td>
+                                <td>$9.99</td>
+                                <td>
+                                    <div class="quantity-box">
+                                        <button type="button" class="sub"><i class="fa fa-minus"></i></button>
+                                        <input type="number" id="product-1" value="1" />
+                                        <button type="button" class="add"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    $9.99
+                                </td>
+                                <td>
+                                    <i class="flaticon-delete remove-icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-box">
+                                        <img src="images/update-26-01-2021/shops/cart-1-2.jpg" alt="">
+                                        <h3><a href="product-details.html">classic chair</a></h3>
+                                    </div><!-- /.product-box -->
+                                </td>
+                                <td>$9.99</td>
+                                <td>
+                                    <div class="quantity-box">
+                                        <button type="button" class="sub"><i class="fa fa-minus"></i></button>
+                                        <input type="number" id="product-2" value="1" />
+                                        <button type="button" class="add"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    $9.99
+                                </td>
+                                <td>
+                                    <i class="flaticon-delete"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table><!-- /.table -->
+                </div><!-- /.table-responsive -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <form action="#" class="default-form cart-cupon__form">
+                            <input type="text" placeholder="Enter Coupon Code" class="cart-cupon__input">
+                            <button class="theme-btn btn-style-one" type="submit">
+                                <i class="btn-curve"></i>
+                                <span class="btn-title">Apply coupon</span>
+                            </button>
+                        </form><!-- /.contact-one__form -->
+                    </div><!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <ul class="cart-total list-unstyled">
+                            <li>
+                                <span>Subtotal</span>
+                                <span>$19.98 </span>
+                            </li>
+                            <li>
+                                <span>Shipping Cost</span>
+                                <span>$0.00 </span>
+                            </li>
+                            <li>
+                                <span>Total</span>
+                                <span class="cart-total__total">$19.98 </span>
+                            </li>
+                        </ul><!-- /.cart-total -->
+                        <div class="cart-page__buttons">
+                            <a class="theme-btn btn-style-two" href="cart.html">
+                                <i class="btn-curve"></i>
+                                <span class="btn-title">update</span>
+                            </a>
+                            <a class="theme-btn btn-style-one" href="checkout.html">
+                                <i class="btn-curve"></i>
+                                <span class="btn-title">Checkout</span>
+                            </a>
+                        </div><!-- /.button-box -->
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.cart-page -->
+
+
+
+
+
+        <!-- Main Footer -->
+    </div>
+    <!--End pagewrapper-->
+
+{%endblock%}

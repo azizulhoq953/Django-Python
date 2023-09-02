@@ -1,0 +1,75 @@
+started study 08.07.2023 saturday 
+
+1. Install Package
+sudo apt-get install python3-venv
+  
+3. Create Virtual Environment
+python3 -m venv djangoenv  
+
+4. Activate Virtual Environment
+source djangoenv/bin/activate  
+
+5. Install Django
+ pip install django  
+ 
+ 6. requirements file
+ pip freeze > requirements.txt
+ 
+ 7. django project . for current folder project create
+ django-admin startproject folderName .
+ 
+ 8. app create
+ 
+ python3 manage.py startapp myapp 
+ 6. Create an Admin User
+  python3 manage.py createsuperuser  
+  
+ 7.Now start development server and access admin login
+ python3 manage.py runserver  
+ 
+   
+ 
+ 9. Django App Example
+ python3 manage.py startapp myapp  
+ 
+ 10. requirements file
+ pip freeze > requirements.txt
+ 
+ 
+ 11. first time apps run mandatory this command
+ python3 manage.py makemigrations
+ python3 manage.py migrate
+ 
+ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+ STATIC_DIR = os.path.join(BASE_DIR, 'static')
+ 
+MEDIA_URL ='/media/'
+MEDIA_ROOT =os.path.join(BASE_DIR,'media')
+STATICFILES_DIRS =[STATIC_DIR,]
+
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ 
+ innner project urls
+ from django.urls import path,include
+    path( 'contact/',views. loginReq, name='contact'),
+ 
+ outer apps urls
+ from django.urls import path
+ from . import views
+  path('',views.blog_grid),
+  
+  outerapps view
+  from django.shortcuts import render
+def blog_grid(request):
+    return render(request, 'blog/blog-grid.html')
+    
+    
+    
+    csrf default library in view file
+    from django.template import RequestContext
+    
+    
+    
+    
+    https://github.com/boxabhi/complete-djano-ecommerce-youtube
+
