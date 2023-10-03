@@ -2,7 +2,7 @@ started study 08.07.2023 saturday
 
 1. Install Package
 sudo apt-get install python3-venv
-  
+  //pkg
 3. Create Virtual Environment
 python3 -m venv djangoenv  
 
